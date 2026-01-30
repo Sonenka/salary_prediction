@@ -104,13 +104,6 @@ def main() -> List[float]:
                 y_true[i],
                 diffs[i],
             )
-        logger.info(
-            "Salary diff stats | min: %.2f | max: %.2f | mean: %.2f | std: %.2f",
-            float(np.min(diffs)),
-            float(np.max(diffs)),
-            float(np.mean(diffs)),
-            float(np.std(diffs)),
-        )
 
     return salaries
 
